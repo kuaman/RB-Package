@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>240</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font: 75 10pt &quot;나눔바른고딕&quot;;
+background-color: rgb(240, 240, 240);</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="verticalSpacing">
+    <number>15</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QSplitter" name="splitter_2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="handleWidth">
+       <number>12</number>
+      </property>
+      <widget class="QPushButton" name="KT">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(231, 0, 16);
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>Korea Telecom</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="SKT">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(245, 128, 33);</string>
+       </property>
+       <property name="text">
+        <string>SK Telecom</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="LGUP">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(237, 0, 143);
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>LG U+</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QPushButton" name="pushButton">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(186, 186, 186)
+</string>
+     </property>
+     <property name="text">
+      <string>돌아가기</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>253</x>
+     <y>220</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>274</x>
+     <y>237</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
