@@ -1,0 +1,31 @@
+<Copyright 2020. 김민서(Redblue / Kuaman) .All rights reserved>
+
+<한국어>
+
+비공개 Github 프로젝트(RB-Package)에 올라간 버전입니다.
+Github License : GPL-v3
+
+개인/비상업적 용도 허용.
+저작권자 표시.
+
+이 프로그램은 Release 버전이며 언제든지 오류가 발생할 수 있습니다.
+
+Made by Redblue
+Developed with PyQt5 and Python 3.7.9
+
+저희의 라이선스를 읽어 주셔서 감사합니다.
+
+<English>
+
+This is the version posted on the private Github Project (RB-Package).
+Github License : GPL-v3
+
+Personal/non-commercial use allowed.
+Indication of copyright holder.
+
+This program is the Release version and errors may occur at any time.
+
+Made by Redblue
+Developed with PyQt5 and Python 3.7.9
+
+Thank you to read our license.
