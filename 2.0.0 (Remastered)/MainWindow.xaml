@@ -1,0 +1,41 @@
+﻿<Window x:Class="RB_Package_Remastered.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:wpf="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
+        xmlns:local="clr-namespace:RB_Package_Remastered"
+        mc:Ignorable="d"
+        Title="RB Package Remastered" Height="462" Width="820" Margin="0" MinWidth="820" MinHeight="462">
+    <DockPanel Margin="0">
+        <Menu Margin="0" DockPanel.Dock="Top">
+            <MenuItem Header="메뉴">
+                <MenuItem Header="설정" Click="btn_Settings_Click"/>
+                <Separator/>
+                <MenuItem Header="제품 정보" Click="btn_Info_Click"/>
+                <MenuItem Header="업데이트 확인" Click="Update"/>
+            </MenuItem>
+            <MenuItem x:Name="Web" Header="웹브라우저">
+                <MenuItem x:Name="menu_web" Header="주소 표시줄" IsCheckable="True" Checked="web_Checked" Unchecked="web_UnChecked"/>
+            </MenuItem>
+        </Menu>
+        <Grid x:Name="Grid1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="24"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <wpf:ChromiumWebBrowser x:Name="ChromeBrowser" Grid.Row="1" AllowDrop="True"/>
+            <UniformGrid Grid.Column="1" Columns="1" Grid.RowSpan="2">
+                <Button x:Name="btn_Editor" Content="RB Editor" Click="btn_Editor_Click" Margin="10" BorderBrush="{x:Null}" FontSize="14"/>
+                <Button x:Name="btn_Link" Content="RB Link" Click="btn_Link_Click" Margin="10" BorderBrush="{x:Null}" FontSize="14"/>
+                <Button x:Name="btn_Settings" Content="Settings" Click="btn_Settings_Click" Margin="10" BorderBrush="{x:Null}" FontSize="14"/>
+                <Button x:Name="btn_Info" Content="Develop Info" Click="btn_Info_Click" Margin="10" BorderBrush="{x:Null}" FontSize="14"/>
+            </UniformGrid>
+            <TextBox x:Name="WebAdress" KeyDown="webEnter" Visibility="Collapsed"/>
+        </Grid>
+    </DockPanel>
+</Window>

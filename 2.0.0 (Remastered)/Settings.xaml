@@ -1,0 +1,51 @@
+﻿<Window x:Class="RB_Package_Remastered.Settings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RB_Package_Remastered"
+        mc:Ignorable="d"
+        Title="Settings" Height="356" Width="600" MinWidth="600" MinHeight="352">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="160"/>
+            <RowDefinition Height="58"/>
+        </Grid.RowDefinitions>
+        <Grid Margin="10" Background="{DynamicResource {x:Static SystemColors.MenuBrushKey}}">
+            <Grid Margin="15,10">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="4*"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="URL_Reset" Content="초기화" IsEnabled="False" Click="URL_Reset_Click" HorizontalContentAlignment="Center" Grid.Column="1" Margin="0,5"/>
+                <CheckBox x:Name="chk_URL" Content="홈 페이지 URL" Margin="0,0,3,0" Checked="chk_URL_Checked" Unchecked="chk_URL_UnChecked"/>
+                <TextBox x:Name="URL" TextWrapping="Wrap" Text="" TextChanged="TextBox_TextChanged" IsEnabled="False" Grid.ColumnSpan="2" Grid.Row="1"/>
+            </Grid>
+        </Grid>
+        <Grid Margin="10" Grid.Row="1" Background="{DynamicResource {x:Static SystemColors.MenuBrushKey}}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="13*"/>
+                <RowDefinition Height="57*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="190*"/>
+                <ColumnDefinition Width="191*"/>
+                <ColumnDefinition Width="191*"/>
+            </Grid.ColumnDefinitions>
+            <Image HorizontalAlignment="Center" Margin="46,8,44,6" VerticalAlignment="Bottom" Source="default.png" Width="100" Height="100" Grid.Row="1"/>
+            <Image HorizontalAlignment="Center" Height="100" Margin="46,8,45,6" VerticalAlignment="Bottom" Width="100" Source="web.png" Grid.Column="1" Grid.Row="1"/>
+            <Image Height="100" Margin="47,8,44,6" VerticalAlignment="Bottom" Width="100" Source="offline.png" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="1"/>
+            <CheckBox x:Name="Default" Content="기본&#xD;&#xA;기본" Margin="10,5,10,0" Checked="Default_Checked" VerticalAlignment="Top" Grid.Row="1" Height="15" HorizontalAlignment="Center"/>
+            <CheckBox x:Name="Web" Content="웹 전용&#xD;&#xA;웹 전용" Margin="10,5,10,0" VerticalAlignment="Top" Checked="Web_Checked" Grid.Column="1" Grid.Row="1" Height="15" HorizontalAlignment="Center"/>
+            <CheckBox x:Name="Offline" Content="오프라인 전용" Margin="10,5,10,0" VerticalAlignment="Top" Checked="Offline_Checked" RenderTransformOrigin="1.847,2.2" Grid.Column="2" Grid.Row="1" Height="15" HorizontalAlignment="Center"/>
+            <Label Content="UI 설정" Margin="0,1,0,0"/>
+        </Grid>
+        <Button x:Name="Restart" Content="적용 (재시작)" Margin="482,10,10,10" Grid.Row="2" Click="Restart_Click" RenderTransformOrigin="0.452,0.52"/>
+        <Button x:Name="Clear" Content="설정 초기화" Margin="10,10,482,10" Grid.Row="2" Click="Clear_Click"/>
+    </Grid>
+</Window>
