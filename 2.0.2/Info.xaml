@@ -1,0 +1,12 @@
+﻿<Window x:Class="RB_Package_Remastered.Info"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RB_Package_Remastered"
+        mc:Ignorable="d"
+        Title="Info" Height="360" Width="600" WindowStyle="ToolWindow" WindowStartupLocation="CenterScreen" Background="{DynamicResource {x:Static SystemColors.MenuBrushKey}}" MaxWidth="600" MaxHeight="360" MinWidth="600" MinHeight="360">
+    <Grid>
+        <TextBlock TextWrapping="Wrap" Margin="10" Background="{DynamicResource {x:Static SystemColors.MenuBrushKey}}" ForceCursor="True"><Run Text="프로그램 정보"/><LineBreak/><Run/><LineBreak/><Run Text="&#x9;"/><Run Text="이름 : RB Package"/><LineBreak/><Run/><LineBreak/><Run Text="&#x9;"/><Run Text="버전"/><Run Text=" : "/><Run Text="Remastered (2.0."/><Run Text="2"/><Run Text=")"/><LineBreak/><Run/><LineBreak/><Run Text="&#x9;"/><Run Text="개발 환경 : WPF / C# / .Net 4."/><Run Text="6"/><Run Text=" / Visual Studio 2019 :: "/><Run Text="["/><Run Text="Browser"/><Run Text="]"/><Run Text=" CefSharp (Wpf) ::"/><Run Text=" NSIS 3"/><LineBreak/><Run/><LineBreak/><Run Text="&#x9;"/><Run Text="포함된 앱"/><Run Text=" : RB"/><Run Text=" "/><Run Text="Editor, "/><Run Text="RB Pass, "/><Run Text="RB"/><Run Text=" "/><Run Text="Link"/><LineBreak/><Run/><LineBreak/><Run Text="&#x9;"/><Run Text="&lt;Copyright 202"/><Run Text="1"/><Run Text=". Redblue(김민서). All rights reserved.&gt;"/><LineBreak/><Run Text=""/><LineBreak/><Run Text="개발자 정보"/><LineBreak/><Run/><LineBreak/><Run Text="&#x9;"/><Run Text="개발자 이름 : 김민서 (Redblue / Kuaman)"/><LineBreak/><Run/><LineBreak/><Run Text="&#x9;"/><Run Text="개발자 블로그 : "/><Hyperlink NavigateUri="https://github.com/kuaman/RB-Package"><Run Text="https://github.com/kuaman/RB-Package"/></Hyperlink></TextBlock>
+    </Grid>
+</Window>
